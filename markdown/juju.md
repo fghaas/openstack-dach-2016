@@ -15,7 +15,10 @@
 Note: More information is available at https://jujucharms.com/docs/2.0/howto-privatecloud
 
 
-### Simplestreams: Metadaten erzeugen
+### Simplestreams
+
+Metadaten erzeugen
+
 ```bash
 juju metadata generate-image \
   -d ~/simplestreams \

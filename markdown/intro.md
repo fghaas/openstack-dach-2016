@@ -11,11 +11,11 @@ Florian Haas
 [xahteiwi](//twitter.com/xahteiwi) | [hastexo](//www.hastexo.com/who/florian)
 
 
-Reden wir √ber
+Reden wir √ºber
 ## Automatisierung
 
 
 # Wie
-k√nnen wir
+k√∂nnen wir
 ### virtuelle Systeme
 in OpenStack automatisieren?
