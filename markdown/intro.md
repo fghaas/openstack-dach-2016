@@ -1,23 +1,21 @@
-## Heat and Its Alternatives
+## Heat und die Alternativen
 
 Application Deployment in OpenStack
 
 ****
 
-OpenStack Summit 2016, Barcelona
+OpenStack DACH 2016, Berlin
 
 Florian Haas
 
 [xahteiwi](//twitter.com/xahteiwi) | [hastexo](//www.hastexo.com/who/florian)
 
-Note: Add introductory slides here.
+
+Reden wir √ber
+## Automatisierung
 
 
-Let's talk about
-## Automation
-
-
-# How
-can we automate
-### virtual systems
-in OpenStack?
+# Wie
+k√nnen wir
+### virtuelle Systeme
+in OpenStack automatisieren?

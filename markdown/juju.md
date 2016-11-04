@@ -5,7 +5,7 @@
 # ~~MAAS~~ <!-- .element: class="fragment" -->
 
 
-## Juju providers
+## Juju-Provider
 
 ### EC2 Azure **OpenStack** Google **Manual** vSphere MAAS Joyent LXD **Rackspace**
 
@@ -15,7 +15,7 @@
 Note: More information is available at https://jujucharms.com/docs/2.0/howto-privatecloud
 
 
-### Simplestreams: create metadata
+### Simplestreams: Metadaten erzeugen
 ```bash
 juju metadata generate-image \
   -d ~/simplestreams \
@@ -32,7 +32,7 @@ from a PPA.
 
 ### Simplestreams
 
-upload metadata
+Metadaten hochladen
 
 ```bash
 openstack container create simplestreams
@@ -43,7 +43,7 @@ swift post simplestreams --read-acl .r:*
 
 ### Simplestreams
 
-create service
+Service anlegen
 
 ```bash
 openstack service create \
@@ -54,7 +54,7 @@ openstack service create \
 
 ### Simplestreams
 
-create endpoint
+Endpoint anlegen
 
 ```bash
 openstack endpoint create \
@@ -66,7 +66,7 @@ product-streams
 ```
 
 
-### Deploying Applications
+### Anwendungen ausrollen
 ```bash
 juju deploy -n 3 rabbitmq-server
 ```
@@ -78,11 +78,11 @@ is changing for 2.x.
 
 ## Juju 1.x:
 
-Infuriatingly close to awesome.
+Frustriend nah dran an genial.
 
 
 ## Juju 2.0:
 
-Everything has changed.
+Alles anders.
 
-And there's no upgrade path.  <!-- .element: class="fragment" -->
+Ohne Upgradepfad.  <!-- .element: class="fragment" -->
