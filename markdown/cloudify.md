@@ -1,7 +1,7 @@
 <!-- .slide: data-background-image="images/cloudify-logo.svg" data-background-size="contain" -->
 
 
-A brief detour:
+Kurzer Umweg:
 ## TOSCA
 ### Topology and Orchestration Specification for Cloud Applications
 
@@ -15,7 +15,7 @@ different providers - without modification!
 
 
 ## TOSCA Simple Profile in YAML
-Out with XML, in with YAML!
+Raus mit XML, rein mit YAML!
 
 Note: The original TOSCA specification describes a Domain Specific
 Language in XML, meant to be machine and human readable. However,

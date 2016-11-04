@@ -1,8 +1,8 @@
 <!-- .slide: data-background-image="images/ansible-logo.svg" data-background-size="contain" -->
 
 
-## Ansible 1.0
-### built-in
+## Ansible 1.x
+### eingebaut
 
 **Glance** glance_image **Keystone** keystone_user **Nova**
 nova_compute nova_keypair **Neutron**
@@ -36,7 +36,7 @@ clouds:
 ```
 
 
-## Uploading an image
+## Glance-Image hochladen
 ```yaml
 - os_image:
     cloud: testing
@@ -49,7 +49,7 @@ clouds:
 ```
 
 
-## Creating a VM
+## VM erzeugen
 ```yaml
 - name: create a nova server
   os_server:

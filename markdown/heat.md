@@ -5,23 +5,23 @@
 
 
 # Heat
-enables you to deploy
-## complete
-virtual environments
+ermöglicht uns das Ausrollen
+## vollständiger
+virtueller Umgebungen
 
 
 # HOT
-is 100%
+ist 100%
 # YAML
 
 
-What can we
-# do
-with Heat?
+Was können wir mit
+# Heat
+machen?
 
 
 ### `OS::Nova::Server`
-Configures Nova guests
+Konfiguriert Nova-VMs
 
 
 ```yaml
@@ -36,9 +36,8 @@ resources:
 ```
 
 
-Now we could just
-# create
-this stack
+Wir könnten diesen Stack jetzt
+# starten
 
 
 ```bash
@@ -50,14 +49,12 @@ openstack stack create -t stack.yml mystack
 ```
 
 
-But as it is,
-
-it's not very
-# flexible
+Aber so wäre es nicht besonders
+# flexibel
 
 
-Let's add some
-## parameters
+Machen wir das doch besser mit
+## Parametern
 
 
 ```yaml
@@ -76,8 +73,8 @@ parameters:
 ```
 
 
-And some
-## intrinsic functions
+... und
+## eingebauten Funktionen
 
 
 ```yaml
@@ -92,9 +89,8 @@ resources:
 ```
 
 
-And now we can
-# set
-these parameters
+Jetzt können wir diese Parameter
+## einstellen
 
 
 ```bash
@@ -112,13 +108,13 @@ openstack stack create -t stack.yml \
 ```
 
 
-How about we add some
-## network connectivity
+Sorgen wir für
+## Netzwerk-Konnektivität
 
 
 ### `OS::Neutron::Net`
 ### `OS::Neutron::Subnet`
-Defines Neutron networks
+Definiert Neutron-Netzwerke
 
 
 ```yaml
@@ -142,15 +138,15 @@ Defines Neutron networks
 
 
 ## `get_resource`
-Cross-reference between resources
+Querverweise zwischen Ressourcen
 
-Automatic dependency
+Automatische Abhängigkeit
 
 
 ### `OS::Neutron::Router`
 ### `OS::Neutron::RouterGateway`
 ### `OS::Neutron::RouterInterface`
-Configures Neutron routers
+Konfiguriert Neutron-Router
 
 
 ```yaml
@@ -176,7 +172,7 @@ resources:
 
 
 ### `OS::Neutron::Port`
-Configures Neutron ports
+Konfiguriert Neutron-Ports
 
 
 ```yaml
@@ -200,7 +196,7 @@ Configures Neutron ports
 
 
 ### `OS::Neutron::SecurityGroup`
-Configures Neutron security groups
+Konfiguriert Neutron Security Groups
 
 
 ```yaml
@@ -230,7 +226,7 @@ Configures Neutron security groups
 
 
 ### `OS::Neutron::FloatingIP`
-Allocates floating IP addresses
+Weist Floating-IP-Adressen zu
 
 
 ```yaml
@@ -243,7 +239,7 @@ Allocates floating IP addresses
 
 
 ### `outputs`
-Return stack values or attributes
+Gibt Werte oder Attribute zurück
 
 
 ```yaml
@@ -265,14 +261,14 @@ openstack stack output show \
 ```
 
 
-Integrating
+Integration von
 # Heat
-with
+mit
 ## `cloud-init`
 
 
 ### `OS::Heat::CloudConfig`
-Manages `cloud-config` directly from Heat
+Verwaltet `cloud-config` direkt aus Heat
 
 
 ```yaml
@@ -300,10 +296,9 @@ resources:
 ```
 
 
-Now we can also
-# set
-### `cloud-config` parameters
-directly from Heat
+Damit können wir
+### `cloud-config`-Parameter
+direkt aus Heat setzen
 
 
 ```yaml

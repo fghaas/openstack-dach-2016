@@ -1,6 +1,4 @@
-### So, how do they
-## stack up?
-(See what I did there?)
+## Im Vergleich
 
 Note: On the following slides, the check mark (☑) means a feature is
 supported, the X mark (☒) means a feature is unsupported — and the
@@ -8,7 +6,7 @@ frowny face (☹) means the authors would **like** for the feature to be
 fully supported and work well, but in all honesty it really doesn't.
 
 
-|          | OpenStack Native      |
+|          | OpenStack-nativ       |
 | -------- |:---------------------:|
 | Heat     | ☑                    |
 | Juju     | ☒                    |
@@ -24,7 +22,7 @@ Neutron LBaasv2 support was only added in Mitaka, whereas v1 was
 cloud providers not deploying every single OpenStack release.
 
 
-|          | Full-Stack Actions    |
+|          | Stackweite Vorgänge   |
 | -------- |:---------------------:|
 | Heat     | ☑                    |
 | Juju     | ☒                    |
@@ -36,7 +34,7 @@ such as suspending and resuming an entire stack. This can be a huge
 cost saver in public clouds. No other orchestration facility has this.
 
 
-|          | Native Scale-Out      |
+|          | Natives Scale-Out     |
 | -------- |:---------------------:|
 | Heat     | ☑                    |
 | Juju     | ☑                    |
@@ -52,7 +50,7 @@ does not; although scale-out can be achieved simply by running an
 additional playbook.
 
 
-|          | Standards Based       |
+|          | Standardbasierend     |
 | -------- |:---------------------:|
 | Heat     | ☒                    |
 | Juju     | ☒                    |
@@ -66,7 +64,7 @@ Juju nor Ansible attempt to implement any industry standard (YAML is
 just a syntax, not a standard).
 
 
-|          | Deploy OpenStack      |
+|          | OpenStack ausrollen   |
 | -------- |:---------------------:|
 | Heat     | ☑                    |
 | Juju     | ☑                    |
@@ -78,7 +76,7 @@ and Ansible (through OSA) can be used to deploy OpenStack itself, in
 addition to deploying applications _within_ OpenStack.
 
 
-|          | Customize Apps        |
+|          | Anpassbarkeit         |
 | -------- |:---------------------:|
 | Heat     | ☑                    |
 | Juju     | ☹                    |
@@ -108,7 +106,7 @@ than a year post-acquisition (hello, Red Hat?), and Cloudify has
 Cloudify Manager.
 
 
-|          | Community Driven      |
+|          | Community             |
 | -------- |:---------------------:|
 | Heat     | ☑                    |
 | Juju     | ☹                    |
@@ -125,10 +123,10 @@ both the OpenStack charms and the OpenStack provider are almost 100%
 Canonical's work.
 
 
-|          | Any public OpenStack  |
+|          | Jedes OpenStack       |
 | -------- |:---------------------:|
 | Heat     | ☹                    |
-| Juju     | ☒                    |
+| Juju     | ☹                    |
 | Ansible  | ☑                    |
 | Cloudify | ☑                    |
 
@@ -151,17 +149,17 @@ requires standard public OpenStack APIs.
 
 |                        | Heat      | Juju      | Ansible   | Cloudify  |
 | ---------------------- |:---------:|:---------:|:---------:|:---------:|
-| OpenStack Native       | ☑        | ☒        | ☒        | ☒        |
-| Full-Stack Actions     | ☑        | ☒        | ☒        | ☒        |
+| OpenStack-nativ        | ☑        | ☒        | ☒        | ☒        |
+| Stackweite Vorgänge    | ☑        | ☒        | ☒        | ☒        |
 | Native Scale-Out       | ☑        | ☑        | ☒        | ☑        |
-| Standards Based        | ☒        | ☒        | ☒        | ☑        |
-| Customize Apps         | ☑        | ☒        | ☑        | ☑        |
+| Standardbasierend      | ☒        | ☒        | ☒        | ☑        |
+| Anpassbarkeit          | ☑        | ☒        | ☑        | ☑        |
 | GUI                    | ☑        | ☑        | ☹        | ☑        |
-| Community Driven       | ☑        | ☹        | ☑        | ☒        |
-| Any public OpenStack   | ☹        | ☒        | ☑        | ☑        |
+| Community              | ☑        | ☹        | ☑        | ☒        |
+| Jedes OpenStack        | ☹        | ☹        | ☑        | ☑        |
 
 
-Which should I choose?
+Welches nehm ich nun?
 
 ```python
 print(heat or juju or ansible or cloudify)
