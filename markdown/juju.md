@@ -74,7 +74,6 @@ product-streams
 juju deploy -n 3 rabbitmq-server
 ```
 
-
 Note: Applications were called "services" in Juju 1.x; the terminology
 is changing for 2.x.
 
