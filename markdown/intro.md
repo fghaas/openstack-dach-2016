@@ -12,7 +12,7 @@ Florian Haas
 
 
 Reden wir über
-## Automatisierung
+### Automatisierung
 
 
 # Wie
